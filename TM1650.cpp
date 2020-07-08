@@ -13,7 +13,7 @@
 #include <Arduino.h>
 static int8_t NUM[] = {0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f}; //number:0~9
 static int8_t DIG[] = {0x68,0x6a,0x6c,0x6e};
-static int8_t DOT[] = {0,0,0,0};
+int8_t DOT[] = {0,0,0,0};
 
 TM1650::TM1650(uint8_t Clk, uint8_t Data){
   Clkpin = Clk;
